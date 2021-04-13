@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 import { baseContainer } from "./BaseStyles";
 import colors from "./constants/colors";
-import { DeviceWidth } from "./constants/Layout";
+import { LarghezzaDevice } from "./constants/Layout";
 
 export const styles = StyleSheet.create({
   container: {
@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
     borderBottomColor: "black",
     borderBottomWidth: 1,
     padding: 10,
-    width: DeviceWidth,
+    width: LarghezzaDevice,
     backgroundColor: "white",
   },
 });

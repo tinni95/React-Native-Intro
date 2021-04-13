@@ -1,11 +1,11 @@
 import { StatusBar } from "expo-status-bar";
-import React from "react";
+import React, { useState } from "react";
 import { Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./Home.styles";
 
 export default function Home() {
   //stato del componente
-  const [titolo, setTitolo] = React.useState("Primo valore dello stato");
+  const [titolo, setTitolo] = useState("Primo valore dello stato");
 
   //definizione di una funzione
   const funzione = () => {

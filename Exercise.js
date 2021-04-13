@@ -7,8 +7,9 @@ export default function Exercise() {
   const [cognome, onChangeCognome] = useState("");
 
   const handleSubmit = () => {
-    console.log(input);
-    alert(input);
+    console.log("Nome:", nome);
+    console.log("Cognome:", cognome);
+    //alert(nome);
   };
 
   return (
@@ -17,13 +18,13 @@ export default function Exercise() {
         onChangeText={onChangeNome}
         value={nome}
         style={styles.textInput}
-        placeholder={"PROVA"}
+        placeholder={"Inserisci Nome"}
       />
       <TextInput
         onChangeText={onChangeCognome}
         value={cognome}
         style={styles.textInput}
-        placeholder={"PROVA"}
+        placeholder={"Inserisci Cognome"}
       />
       <Button onPress={handleSubmit} title={"SUBMIT"}></Button>
     </View>
